@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+  ================================================== -->
+
+	<meta charset="UTF-8">
+	<title> Former Front End Developer / Web Designer / Andres Vargas</title>
+	<meta name="description" content=" Andres Vargas,UI/Web Designer from Colombia.
+Skills: Adobe Fireworks, Photoshop, Sublime Text 2, HTML5, CSS3, Js, Jquery, SEO, Arquitecture information and build of Wireframes.">
+	<meta name="author" content="Javier Andres Vargas Sanchez">
+	<meta name="keywords" content="web, design, IU, UX, sublime, developer, front, end, bogota, colombia, english, spanish, ingles, español">
+	<meta name="robots" content="">
+
+		<!-- HUMANS
+  ================================================== -->
+  
+	 <link rel="author" href="humans.txt" />
+
+	<!-- CSS
+  ================================================== -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<!-- JavaScripts 
+	================================================ -->
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+	<!-- Fonts
+  ================================================== -->
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+
+
+
+</head>
+<body>
+
+	<header class="block-header">
+		<div class="container">
+			<div class="cont-header">
+					<div class="cont-header-int">
+						<div class="logo cambio">
+							<a href="#">
+								<h1>/ Front End Developer / Web Designer / Andres Vargas</h1>
+							</a>
+						</div>
+
+						<div class="social-top">
+							<ul>
+								<li class="twitter" class="cambio"><a href=""><h2>Twitter - Andres Vargas - Diseñador Web</h2></a></li>
+								<li class="link" class="cambio"><a href=""><h2>Linkedin - Andres Vargas - Diseñador Web</h2></a></li>
+								<li class="pinterest" class="cambio"><a href=""><h2>Pinterest - Andres Vargas - Diseñador Web</h2></a></li>
+								<li class="behance" class="cambio"><a href=""><h2>Behance - Andres Vargas - Diseñador Web</h2></a></li>
+							</ul>
+						</div>
+
+						<div class="nav-top">
+							<ul>
+								<li><a href="#">WORK</a></li>
+								<li><a href="#">ABOUT</a></li>
+								<li><a href="#">CONTACT</a></li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</div>
+	</header>
+	
+
+	<div class="container_img">
+		<div class="container">
+			<div class="txt-cont">
+				<div <div class="int-txt">
+					<h2>LOGIC WILL GET YOU FROM A TO B.</h2>
+					<h1>IMAGINATION WILL TAKE YOU EVERYWHERE</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="works">
+		<div class="container">
+		<h2 class="works_title">WORKS</h2>
+			<div class="work_item">
+				<a class="work_content_img" href="">
+					<img class="work_img" src="img/work_01.jpg" alt=""></a>
+				<a class="work_link" href="">
+					<h1 class="work_title">Lorem ipsum dolor sit amet</h1>
+					<p class="work_subtitle">Ejemplo de texto largo para la descripción web proyect</p>
+				</a>
+			</div>
+
+			<div class="work_item">
+				<a class="work_content_img" href="">
+					<img class="work_img" src="img/work_01.jpg" alt=""></a>
+				<a class="work_link" href="">
+					<h1 class="work_title">Lorem ipsum dolor sit amet</h1>
+					<p class="work_subtitle">Ejemplo de texto largo para la descripción web proyect</p>
+				</a>
+			</div>
+
+			<div class="work_item">
+				<a class="work_content_img" href="">
+					<img class="work_img" src="img/work_01.jpg" alt=""></a>
+				<a class="work_link" href="">
+					<h1 class="work_title">Lorem ipsum dolor sit amet</h1>
+					<p class="work_subtitle">Ejemplo de texto largo para la descripción web proyect</p>
+				</a>
+			</div>
+
+			<div class="work_item">
+				<a class="work_content_img" href="">
+					<img class="work_img" src="img/work_01.jpg" alt=""></a>
+				<a class="work_link" href="">
+					<h1 class="work_title">Lorem ipsum dolor sit amet</h1>
+					<p class="work_subtitle">Ejemplo de texto largo para la descripción web proyect</p>
+				</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	  <script>
+                        var uniqueRandoms = [];
+                        var numRandoms = 4;
+                        function makeUniqueRandom() {
+
+                            if (!uniqueRandoms.length) {
+                                for (var i = 0; i < numRandoms; i++) {
+                                    uniqueRandoms.push(i);
+                                }
+                            }
+                            var index = Math.floor(Math.random() * uniqueRandoms.length);
+                            var val = uniqueRandoms[index];
+                            uniqueRandoms.splice(index, 1);
+
+                            return val;
+                        }
+
+                      $('.work_content_img').each(function(){
+
+                        var color0 = '#ec2224';
+                        var color1 = '#0a5caa';
+                        var color2 = '#f58026';
+                        var color3 = '#80b444';
+
+                        var colorClass = "color"+makeUniqueRandom();            
+                        $(this).css('border-color', eval(colorClass));
+                        console.log(colorClass);
+                      });
+
+                </script> 
+	
+
+<!-- 	<div class="container">
+		<div class="view view-ninth">
+	        <img src="img/11.jpg" />
+	            <div class="mask mask-1"></div>
+	            <div class="mask mask-2"></div>
+	            <div class="content">
+	                <h2>LOGO DESIGN / WEB DESIGN</h2>
+	                <p>Confitecta Ecuador,refresh identidad gráfica y pagina web.</p>
+	                <a href="#" class="info">Read More</a>
+	            </div>
+	    </div>
+	</div> -->
+
+</body>
+</html>

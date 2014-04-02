@@ -1,0 +1,13 @@
+﻿/* TEAM */
+
+	UI developer: Andres Vargas
+	Twitter: @nabu1615
+	From:Bogota, Colombia
+		
+
+/* SITE */
+	Last update:2014/02/04
+	Language: English / Spanish
+	Doctype:HTML5
+	IDE: Sublime Text2, Photoshop 
+	PROTOTYPE: Axure
